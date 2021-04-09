@@ -32,7 +32,7 @@ export default class TodoList extends Component {
   };
 
   toggleCompletion = (id) =>{
-    const updatedTodos = this.state.todos.map((todo) => {
+    const updatedTodos = this.state.todos.map((todo) => { 
       if (todo.id === id) {
         return { ...todo,  completed:!todo.completed };
       }
